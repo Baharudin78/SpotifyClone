@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">SpotifyClone</string>
+    <string name="todo">TODO</string>
+    <string name="time">00:00</string>
+    <string name="prev_time">00:00</string>
 </resources>
