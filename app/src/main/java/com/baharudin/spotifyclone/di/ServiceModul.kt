@@ -2,6 +2,7 @@ package com.baharudin.spotifyclone.di
 
 import android.annotation.SuppressLint
 import android.content.Context
+import com.baharudin.spotifyclone.data.remote.SongDatabase
 import com.google.android.exoplayer2.C
 import com.google.android.exoplayer2.SimpleExoPlayer
 import com.google.android.exoplayer2.audio.AudioAttributes
@@ -18,6 +19,10 @@ import dagger.hilt.android.scopes.ServiceScoped
 @InstallIn(ServiceComponent::class)
 
 object ServiceModul {
+
+    @ServiceScoped
+    @Provides
+    fun provideSongDatabase() = SongDatabase()
 
     @SuppressLint("WrongConstant")
     @ServiceScoped
